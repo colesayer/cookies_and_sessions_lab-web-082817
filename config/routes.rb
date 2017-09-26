@@ -1,6 +1,9 @@
 Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
+  get '/', to: 'products#index', as: 'products'
+  post '/add', to: 'products#add', as: 'add_products'
+
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
